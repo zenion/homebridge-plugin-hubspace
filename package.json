@@ -5,6 +5,11 @@
   "version": "1.0.0",
   "description": "Integration for home depot's hubspace devices",
   "license": "Apache-2.0",
+  "author": {
+    "name": "Josh Stout",
+    "email": "joshstout@gmail.com",
+    "url": "https://github.com/zenion"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zenion/homebridge-plugin-hubspace.git"
@@ -43,6 +48,7 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "homebridge": "^1.5.1",
     "nodemon": "^2.0.13",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
