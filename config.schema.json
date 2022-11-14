@@ -1,0 +1,40 @@
+{
+  "pluginAlias": "hubspace",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true,
+        "default": "Hubspace Platform"
+      },
+      "username": {
+        "title": "Username",
+        "type": "string",
+        "required": true,
+        "default": ""
+      },
+      "password": {
+        "title": "Password",
+        "type": "string",
+        "required": true,
+        "default": ""
+      },
+      "accessToken": {
+        "title": "Refresh Token",
+        "type": "string",
+        "required": false,
+        "default": ""
+      },
+      "accountId": {
+        "title": "Account ID",
+        "type": "string",
+        "required": false,
+        "default": ""
+      }
+    }
+  }
+}

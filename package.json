@@ -1,0 +1,50 @@
+{
+  "private": false,
+  "displayName": "Hubspace Homebridge Plugin",
+  "name": "homebridge-plugin-hubspace",
+  "version": "1.0.0",
+  "description": "Integration for home depot's hubspace devices",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenion/homebridge-plugin-hubspace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zenion/homebridge-plugin-hubspace/issues"
+  },
+  "engines": {
+    "node": ">=14.18.1",
+    "homebridge": ">=1.3.5"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src/**.ts --max-warnings=0",
+    "watch": "npm run build && npm link && nodemon",
+    "build": "rimraf ./dist && tsc",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "dependencies": {
+    "axios": "^1.1.3",
+    "axios-cookiejar-support": "^4.0.3",
+    "commander": "^9.4.1",
+    "qs": "^6.11.0",
+    "tough-cookie": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "homebridge": "^1.5.1",
+    "nodemon": "^2.0.13",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
+  }
+}
