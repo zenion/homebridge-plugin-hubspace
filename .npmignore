@@ -3,6 +3,8 @@ src
 
 # ------------- Defaults ------------- #
 
+.prettierrc
+
 # gitHub actions
 .github
 
